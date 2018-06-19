@@ -1,0 +1,482 @@
+package view;
+
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.GridBagConstraints;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+
+
+/**
+ *
+ * @author klodjan
+ */
+public class CompositionView extends JFrame implements ActionListener {
+    private String notes;
+    private int argument;
+    private String instrumen;
+    private JScrollPane scroll;
+    private Boolean finish;
+    Color c;
+    GridBagConstraints gg = new GridBagConstraints();
+    private JButton button = new JButton("C");
+    private JButton button2 = new JButton("C#");
+    private JButton button3 = new JButton("D");
+    private JButton button4 = new JButton("#");
+    private JButton button5 = new JButton("E");
+    private JButton button6 = new JButton("F");
+    private JButton button7 = new JButton("F#");
+    private JButton button8 = new JButton("G");
+    private JButton button9 = new JButton("G3");
+    private JButton button10 = new JButton("A");
+    private JButton button11 = new JButton("A#");
+    private JButton button12 = new JButton("B");
+    private JButton button13 = new JButton("Do Nothing");
+    private JButton button14 = new JButton("Retrogate");
+    private JButton button15 = new JButton("Transpose");
+    private JButton button16 = new JButton("Reflect");
+    private ImageIcon iconPlay = new ImageIcon();
+    private JButton button17 = new JButton(iconPlay);
+    private JPanel panel;
+    private JPanel panels;
+    private JMenuBar menuBar = new JMenuBar();
+    private JMenu menu = new JMenu("Composition");
+    private JMenu menu1 = new JMenu("Instrument");
+    private JMenu menu2 = new JMenu("Help");
+    private JMenuItem menuItem1 = new JMenuItem("Open");
+    private JMenuItem menuItem11 = new JMenuItem("New");
+    private JMenuItem menuItem12 = new JMenuItem("Save");
+    private JMenuItem menuItem13 = new JMenuItem("Save As");
+    private JMenuItem menuItem14 = new JMenuItem("Export");
+    private JMenuItem menuItem15 = new JMenuItem("Quit");
+    private JMenuItem menuItem122 = new JMenuItem("Piano");
+    private JMenuItem menuItem123 = new JMenuItem("Guitar");
+    private JMenuItem menuItem124 = new JMenuItem("Flute");
+    private JMenuItem menuItem125 = new JMenuItem("Other...");
+    private JMenuItem menuItem9 = new JMenuItem("About");
+    BorderLayout a = new BorderLayout();
+    private JLabel mode = new JLabel("Mode:");
+    private JLabel composition = new JLabel("Composition:");
+    private JLabel composer = new JLabel("Composer:");
+    private JLabel instrument = new JLabel("Instrument:");
+    private JTextField Composition;
+    private JTextField Composer;
+    private JTextField Mode;
+    private JTextField Instrument;
+    private JTextField integer;
+    private int counter=0;
+    
+    
+    public CompositionView() {
+        
+        
+        
+    }
+   
+  /**
+   * meso enos parathiraki pou tha anoikti molis 
+   * anoiktei to grafiko tha zitisw apo ton user 
+   * na epileksei ena apo ta tria modes FREE ,ATONAL,ALGorithm
+   * pou tha emfanistoun sthn othoni ;
+   * @return string FREE or ATONAL or ALGORITHM
+   */  
+    public String chooseMode(){
+        return null;
+        
+    }
+    /**
+     * pernei eisodo apo ena JOptionPane pou tha anoiksei 
+     * kai tiponei to onoma tou composition sto JTextField tou
+     * Composition
+     * 
+     * @return 
+     */
+    public String CompositionName() {
+        
+
+
+        return this.Composition.getText();
+
+    }
+ /**
+     * pernei eisodo apo ena JOptionPane pou tha anoiksei 
+     * kai tiponei to onoma tou composer sto JTextField tou
+     * Composer
+     * 
+     * @return 
+     */
+    public String ComposerName() {
+        return this.Composer.getText();
+
+    }
+ /**
+     * pernei eisodo apo to chooseMode() 
+     * kai tiponei to onoma tou mode sto JTextField tou
+     * Mode
+     * 
+     * @return 
+     */
+    public String ModeName() {
+        return this.Mode.getText();
+
+    }
+     /**
+     * pernei eisodo apo to JMenuItem 
+     * kai tiponei to onoma tou instrument sto JTextField tou
+     * Instrument
+     * 
+     * @return 
+     */
+    public String InstrumentName() {
+        return this.Instrument.getText();
+    }
+    
+    
+    
+    
+    /**
+     * Ftiaxnoume ena koumpi me onoma C prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma C sto 
+     * string notes
+     */
+    
+    public void addC_NoteListener(){
+        
+        button2.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent evt){
+                 button2.setBackground(new Color(122,122,122));
+                
+                notes +="C";
+            }
+            
+                
+        });
+        
+        
+    }
+    
+    
+    
+    
+    
+    /**
+     * Ftiaxnoume ena koumpi me onoma C# prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma C# sto 
+     * string notes
+     */
+    
+    public void addCdiesiNoteListener(){
+       
+       
+        
+    }
+    
+    /**
+     * Ftiaxnoume ena koumpi me onoma D prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma D sto 
+     * string notes
+     */
+    public void addD_NoteListener(){
+      
+       
+        
+    }
+    /**
+     * Ftiaxnoume ena koumpi me onoma D# prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma D# sto 
+     * string notes
+     */
+    public void addDdiesiNoteListener(){
+   
+        
+    }
+    /**
+     * Ftiaxnoume ena koumpi me onoma E prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma E sto 
+     * string notes
+     */
+    public void addE_NoteListener(){
+      
+        
+    }
+    /**
+     * Ftiaxnoume ena koumpi me onoma F prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma F sto 
+     * string notes
+     */
+    public void addF_NoteListener(){
+        
+        
+    }
+    /**
+     * Ftiaxnoume ena koumpi me onoma F# prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma F# sto 
+     * string notes
+     */
+    
+    public void addFdiesi_NoteListener(){
+       
+        
+    }
+    /**
+     * Ftiaxnoume ena koumpi me onoma G prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma G sto 
+     * string notes
+     */
+    public void addG_NoteListener(){
+      
+        
+    }
+    /**
+     * Ftiaxnoume ena koumpi me onoma G# prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma G# sto 
+     * string notes
+     */
+    public void addGdiesi_NoteListener(){
+     
+        
+    }
+    /**
+     * Ftiaxnoume ena koumpi me onoma A prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma A sto 
+     * string notes
+     */
+    public void addA_NoteListener(){
+       
+        
+    }
+    /**
+     * Ftiaxnoume ena koumpi me onoma A# prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma A# sto 
+     * string notes
+     */
+    public void addAdiesi_NoteListener(){
+        
+        
+    }
+    
+    /**
+     * Ftiaxnoume ena koumpi me onoma B prin efarmostei 
+     * to action sto koumpi elegxete to mode kai istera 
+     * kanoume to action kai topothetoume to gramma B sto 
+     * string notes
+     */
+    public void addB_NoteListener(){
+        
+        
+    }
+    
+    /**
+     * epistrefei tis notes pou topothetisan ta koumpia
+     * @return notes
+     */
+    public String getnotesfromButtons(){
+       return  this.notes;
+    }
+    
+    
+    /**
+     * Ftiaxnoume ena koumpi me onoma DoNothing prin efarmostei 
+     * to action sto koumpi elegxete to mode ,an exoun patithei ta 12
+     * koupia  mesw enos counter kai istera 
+     * kanoume to action kai epistrefoume kai to string "DoNothing" 
+     * 
+     */
+        public String addDoNothingListener(){
+        return null;
+        }
+        /**
+     * Ftiaxnoume ena koumpi me onoma Retrogate prin efarmostei 
+     * to action sto koumpi elegxete to mode ,an exoun patithei ta 12
+     * koupia  mesw enos counter kai istera 
+     * kanoume to action kai epistrefoume kai to string "Retrogate" 
+     * 
+     */
+    public String addRetrogateListener(){
+        return null;
+        }
+   /** Ftiaxnoume ena koumpi me onoma Transpos prin efarmostei 
+     * to action sto koumpi elegxete to mode ,an exoun patithei ta 12
+     * koupia  mesw enos counter kai istera 
+     * kanoume to action kai epistrefoume kai to string "Transpose" 
+     * 
+     */
+    public String addTransposeListener(){
+        return null;
+        }
+    /** Ftiaxnoume ena koumpi me onoma Reflect prin efarmostei 
+     * to action sto koumpi elegxete to mode ,an exoun patithei ta 12
+     * koupia  mesw enos counter, kai istera 
+     * kanoume to action kai epistrefoume kai to string "Reflect" 
+     * 
+     */
+    
+    public String addReflectListener(){
+        return null;
+        }
+    
+     /** Ftiaxnoume ena koumpi Play kai me to pou patithei kanoume 
+     * to action opou prota epistrefei tis notes pou pirame
+     * kai istera arxizei na paizei h mousiki 
+     * 
+     */
+   public String addPlayListener(){
+         return this.notes;
+    }
+   
+   /**
+    * Stamataei i mousiki kai epistrefei true an exei patithei to koumpi 
+    */
+   public boolean addStopListener(){
+            return true;
+    }
+    /**
+    * Ftiaxnei thn menu Bar Composition Instrument Help
+    */
+    public void createMenuBar(){
+     
+        
+    }
+    
+    /**
+     * Ftiaxnei thn Open sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h open
+     */
+     public void createJMenuItemOpenListener(){
+       
+    }
+     
+     /**
+     * Ftiaxnei thn Save sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h Save
+     */
+     public void createJMenuItemSaveListener(){
+       
+    }
+     /**
+     * Ftiaxnei thn SaveAs sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h SaveAs
+     */
+     public void createJMenuItemSaveAsListener(){
+       
+    }
+     /**
+     * Ftiaxnei thn Export sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h Export
+     */
+     public void createJMenuItemExportListener(){
+       
+    }
+     /**
+     * Ftiaxnei thn Quit sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h Quit
+     */
+     public void createJMenuItemQuitListener(){
+       
+    }
+     
+     /**
+     * Ftiaxnei thn Piano sto menu kai ulopoiounte 
+     * ola ta actions kai event kai epistrefei Piano
+     */
+     public String createJMenuItemPianoListener(){
+         return this.instrument;
+       
+    }
+     /**
+     * Ftiaxnei thn Guitar sto menu kai ulopoiounte 
+     * ola ta actions kai event kai epistrefei Guitar
+     */
+     public void createJMenuItemGuitarListener(){
+         
+       
+    }
+     /**
+     * Ftiaxnei thn Flute sto menu kai ulopoiounte 
+     * ola ta actions kai event kai epistrefei Flute
+     */
+     public void createJMenuItemFluteListener(){
+         
+       
+    }
+     
+     /**
+     * Ftiaxnei thn Other sto menu kai ulopoiounte 
+     * ola ta actions kai event gia na epileksei 
+      * o xristis ena organo kai epistrefei to organo 
+     */
+     public void createJMenuItemOtherListener(){
+         
+       
+    }
+ 
+     /**
+     * Ftiaxnei thn About sto menu kai ulopoiounte 
+     * ola ta actions kai event opou anoigei 
+      * ena arxio me thn leitourgia tou Composition
+     */
+     public void createJMenuItemAboutListener(){
+         
+       
+    }
+    public JPanel setAllButtonsInJPanel(){
+        return this.panels;
+        
+    }
+    /**
+     * Ftiaxnei ena scroll  sto Jtext tou UI kai ulopoiounte 
+     * ola ta actions kai event sto oste otan grafontai polles
+     * notes na gunei scroll
+     */
+    public void createScroll(){
+       
+    }
+    
+    /**
+     * elegxete an exoun patithei kai ta 12 
+     * koumpia tou ksilofonou mesw tou counter
+     * @return finish
+     */
+    public boolean checkforcounter(){
+        return this.finish;
+        
+    }
+     /**
+     * pernei eisodo apo ena JOptionPane pou tha anoiksei 
+     *ena integer gia na exoume to orisma tou Transpose 
+     * kai Reflect
+     * @return 
+     */
+      public int getNumberArgument(){
+         this.argument= Integer.parseInt(this.integer.getText());
+      return this.argument;
+    }
+      
+      /**
+       * Epistrefoume to panel me ola ta element 
+       * pou tha exei to UI mas.
+       * @return panel
+       */
+      public JPanel getPanel(){
+          return this.panel; 
+      }
+
+    public void actionPerformed(ActionEvent ae) {
+        throw new UnsupportedOperationException("Not supported yet.");
+    }
+} 
+ 

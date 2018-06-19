@@ -1,0 +1,130 @@
+package view;
+import java.awt.Image;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author klodjan
+ */
+public class CollectionView {
+    private JButton playbutton = new JButton();
+    private JButton stopbutton = new JButton();
+    private JButton  previousbutton = new JButton();
+    private JButton  nextbutton = new JButton();
+    private JButton  pausebutton = new JButton();
+    private JPanel panel;
+    private Image image;
+    private JLabel playing = new JLabel("Playing");
+    private JLabel artist = new JLabel("Artist/Album");
+    private JLabel track = new JLabel("Track No");
+    private JLabel  tit = new JLabel("Title");
+    private JLabel dur = new JLabel("Duration");
+    
+    private JMenuBar menuBar = new JMenuBar();
+    private JMenu menu = new JMenu("Collection");
+    private JMenu menu1 = new JMenu("Playback");
+    private JMenu menu2 = new JMenu("Help");
+    private JMenuItem menuItem1 = new JMenuItem("Open");
+    private JMenuItem menuItem11 = new JMenuItem("New");
+    private JMenuItem menuItem12 = new JMenuItem("Save");
+    private JMenuItem menuItem13 = new JMenuItem("Save As");
+    private JMenuItem menuItem14 = new JMenuItem("Export");
+    private JMenuItem menuItem15 = new JMenuItem("Quit");
+    private JTextField text ;
+    
+    
+    CollectionView(){
+        
+    }
+    
+    public void createMenuBar(){
+     
+        
+    }
+    
+    /**
+     * Ftiaxnei thn Open sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h open
+     */
+     public void createJMenuItemOpenListener(){
+       
+    }
+     
+     /**
+     * Ftiaxnei thn Save sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h Save
+     */
+     public void createJMenuItemSaveListener(){
+       
+    }
+     /**
+     * Ftiaxnei thn SaveAs sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h SaveAs
+     */
+     public void createJMenuItemSaveAsListener(){
+       
+    }
+     /**
+     * Ftiaxnei thn Export sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h Export
+     */
+     public void createJMenuItemExportListener(){
+       
+    }
+     /**
+     * Ftiaxnei thn Quit sto menu kai ulopoiounte 
+     * ola ta actions kai event pou kanei h Quit
+     */
+     public void createJMenuItemQuitListener(){
+       
+    }
+    
+      
+    /**
+     * Ftiaxnoume ena koumpi me ena image Play mazi me ola ta actions kai events
+     */
+    public void addPlaysListener(){
+       
+        
+    }
+    /**
+     * Ftiaxnoume ena koumpi me ena image Stop mazi me ola ta actions kai events
+     */
+    public void addStopListener(){
+       
+     }
+     /**
+     * Ftiaxnoume ena koumpi me ena image  Previous mazi me ola ta actions kai events
+     */
+    public void addPreviousListener(){
+       
+     }
+     /**
+     * Ftiaxnoume ena koumpi me ena image pause mazi me ola ta actions kai events
+     */
+    public void addPauseListener(){
+       
+     }
+
+    /**
+     * Ftiaxnoume ena koumpi me ena image next mazi me ola ta actions kai events
+     */
+    public void addNextListener(){
+       
+     }
+    public JPanel getPanel(){
+    return panel;
+    }
+    
+}

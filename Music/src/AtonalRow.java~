@@ -1,0 +1,114 @@
+package model;
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Scanner;
+import org.jfugue.*;
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author user
+ */
+public class AtonalRow implements Symmetry{
+    private File filenotes=null;
+    private static String outputFile;
+    private String init12notes;
+    ArrayList <String> actions;
+    
+   
+    public AtonalRow(){
+        
+    }
+    /**
+     * Kataskeuastria methodo gia thn dimiourgeia enos atonalrow me
+     *  12 arxikes notes ,organo ,sunthetis ,kai to eidos mousikis
+     * algorithmic ,atonal h free
+     * @param init12notes
+     * @param instrument
+     * @param composer
+     * @param mode 
+     */
+    public AtonalRow(String init12notes , String instrument, String composer, String mode){
+       
+   }
+    /**
+     *  epilogi ths seiras twn 12 notwn pou epelekse o xristis 
+     * apo to ksilofono
+     * @param init12notes 
+     */
+    
+    public void setInit12Notes(String init12notes){
+        
+    }
+    /**
+     *  epistrofi ths seiras twn 12 notwn pou epelekse o xristis 
+     * apo to ksilofono
+     * @return init12notes 
+     */
+    public String getInit12Notes(){
+        return null;
+    }
+    /**
+     * topotthetisi twn 12 notwn se ena arxio 
+     * gia na gunei h epeksergasia tous analoga
+     * me tis energies pou exei epileksei o xristis  
+     */
+    public static void addInit12NotesInFile(){
+        
+    }
+    /**
+     * topothetisi me tin seira twn energiwn pou exei patisei o xristis 
+     * apo to UI se ena arraylist
+     * @param actions
+     * @return actions
+     */
+    public ArrayList<String> getActions(ArrayList<String> actions){
+        return null;
+    }
+    
+    /**
+     * diplasiasmos twn notwn xoris na kanoume kamia energia panw tous
+     * @throws SymmetryActionOnNonValidAtonalRow 
+     */
+    public void doNothing() throws SymmetryActionOnNonValidAtonalRow{
+                
+     }
+     
+     /**
+     * diplasiasmos twn notwn kanontas shift kata x 
+     * @param x
+     * @throws SymmetryActionOnNonValidAtonalRow 
+     */
+     public void transpose(int x) throws SymmetryActionOnNonValidAtonalRow{
+       
+     }
+         
+     /**
+      * diplasiasmos twn notwn grafontas tous anapoda 
+      * @throws SymmetryActionOnNonValidAtonalRow 
+      */
+     public void retrograde() throws SymmetryActionOnNonValidAtonalRow{
+     }
+     
+     /**
+      * diplasiasmos twn notwn kanontas reflect kata x 
+      * @param x
+      * @throws SymmetryActionOnNonValidAtonalRow 
+      */
+     public void reflect(int x) throws SymmetryActionOnNonValidAtonalRow{
+     
+     }
+     
+     
+     
+    
+     
+     
+}
+     
+
+    
+    

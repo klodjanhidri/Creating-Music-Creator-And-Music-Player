@@ -1,0 +1,117 @@
+package model;
+import java.util.ArrayList;
+import org.jfugue.Pattern;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author user
+ */
+public class AtonalComposition extends Composition implements Symmetry {
+    
+    
+    ArrayList <AtonalRow> atonalRow;
+    
+    /*
+     * kataskeuastria methodo gia thn 
+     * dimiourgia tou antikeimenou Algorithm
+     */
+    public AtonalComposition(){
+        
+    }
+    /**
+     * kataskeuastria methodo gia thn   
+     * dimiourgia tou antikeimenou Algorithm
+     * @param atonalRow
+     * @param instrument
+     * @param composer
+     * @param mode
+     * @param nameOfComposition 
+     */
+    public AtonalComposition( ArrayList <AtonalRow> atonalRow,String instrument,
+            String composer,String mode,String nameOfComposition ){
+        
+        
+    }
+    
+    /**
+     * topothetisi twn antikimenwn atonalrow se ena arraylist
+     * @param atonalRow
+     * @return atonalrow 
+     */
+    public ArrayList <AtonalRow> addAtonalRow(AtonalRow atonalRow){
+        return null;
+        
+    }
+    
+    
+    
+    
+     /**
+     * diplasiasmos twn notwn atonalrow na kanoume kamia energia panw tous
+     * @throws SymmetryActionOnNonValidAtonalRow 
+     */
+    public void doNothing() throws SymmetryActionOnNonValidAtonalRow{
+                
+        
+     }
+     
+     /**
+     * diplasiasmos twn notwn atonalrow kanontas shift kata x 
+     * @param x
+     * @throws SymmetryActionOnNonValidAtonalRow 
+     */
+     public void transpose(int x) throws SymmetryActionOnNonValidAtonalRow{
+       
+     }
+        /**
+      * diplasiasmos twn notwn atonalrow grafontas tous anapoda 
+      * @throws SymmetryActionOnNonValidAtonalRow 
+      */  
+     
+     public void retrograde() throws SymmetryActionOnNonValidAtonalRow{
+     }
+     
+      /**
+      * diplasiasmos twn notwn atonalrow kanontas reflect kata x 
+      * @param x
+      * @throws SymmetryActionOnNonValidAtonalRow 
+      */
+     public void reflect(int x) throws SymmetryActionOnNonValidAtonalRow{
+     
+     }
+     
+      /**
+     * topothetish twn notwn sto pattern
+     * @return pattern
+     */
+     
+     public Pattern addNotesInPattern(){
+        
+      
+         
+     //    pattern.add(out..);
+         this.pattern.add(pattern);
+         return null;
+     }
+     
+     /**
+     * paizoume tis notes pou epilektikan 
+     * apo to ksilofono 
+     */
+     public void playMusic(){
+         
+         
+    }
+     
+     /**
+     * stamatame thn mousiki 
+     */
+     public void stopMusic(){
+     
+     }
+}

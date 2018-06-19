@@ -1,0 +1,51 @@
+
+import java.io.File;
+import java.util.ArrayList;
+
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author klodjan
+ */
+public class CreateListMusic extends Collection {
+    private String ListMusicName;
+    private ArrayList<File>musicSongs;
+    
+    public  CreateListMusic(){
+        
+    }
+    public  CreateListMusic(String ListMusicName,String nameCollection){
+        super( nameCollection);
+        
+    }
+   public void addMusic(File song){
+       
+   }
+    public void removeMusic(File song){
+        
+    }
+    public void DragAndDrop(){
+        
+    }
+    public void selectMusicfromList(File s){
+        
+    }
+    public ArrayList<File> playRandomlyMysic(){
+        return null;
+        
+    }
+    public void replayMusic(File song){
+        
+    }
+    public void replayAllListMusic(ArrayList<File>musicSongs){
+        
+    }
+    public Composition musicInformation(File song){
+        return super.getCompositions().get(2);
+        
+    }
+}

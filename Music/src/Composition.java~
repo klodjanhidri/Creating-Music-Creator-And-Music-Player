@@ -1,0 +1,160 @@
+
+package model;
+/*                                                                                                                              
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+import java.io.File;
+import java.util.Scanner;
+import org.jfugue.*;
+
+/**
+ *
+ @author Klodjan Hidri
+ * @author Evagelia Petavraki
+ */
+public abstract class Composition {
+
+    protected String notes;
+    protected String instrument;
+    protected String nameOfComposition;
+    protected String composer;
+    protected String mode;
+
+    public Composition() {
+    }
+/**
+     * Kataskeuastria methodo gia thn dimiourgeia enos composition me
+     * notes ,organo ,sunthetis ,kai to eidos mousikis
+     * algorithmic ,atonal h free
+     * @param notes
+     * @param instrument
+     * @param composer
+     * @param mode 
+     */
+    public Composition(String instrument, String composer,String mode,String nameOfComposition){
+        
+    }
+
+
+    public Composition(String notes, String instrument, String composer,
+             String mode,String nameOfComposition ){
+        this.composer = composer;
+        this.notes = notes;
+    }
+
+    /**
+     * anoigoume ena arxio apo to UI kai epistrefoume tis notes 
+     * @param file
+     * @return ena string apo notes 
+     */
+    
+   
+    public String openFile(File file) {
+
+
+        return null;
+    }
+    /**
+     * Dimiourgeia enos arxiou  me notes 
+     */
+    public void newFile() {
+    }
+
+    /**
+     * apothikeusi enos arxiou me tis notes
+     * @param a 
+     */
+    public void saveFile(File a) {
+    }
+    /**
+     * apothikeusi enos arxiou me to onoma pou 
+     * thelei o xristis 
+     * @param a 
+     */
+    public void saveAsFile(File a) {
+    }
+
+    /**
+     * dieksagoume ena arxio 
+     * @param a 
+     */
+    public void exportFile(File a ){
+        
+    }
+    public void Quit(){
+        
+      
+    }
+    /**
+     * epistrofi tou organou pou epelekse o xristis
+     * @return to organo
+     */
+    public String getInstrument(){
+        return null;
+        
+    }
+    /**
+     * epilogi tou organou pou epelekse o xristis 
+     * sto menu 
+     * @param x 
+     */
+    public void setInstrument(String instrument){
+        
+    }
+    /**
+     * plirofories gia thn leitourgia tou composition 
+     * programatos
+     */
+    public void help(){
+        
+    }
+    /**
+     * epistrofi tou mode 
+     * @return mode
+     */
+    public String getMode(){
+        return null;
+    }
+   /**
+     * epilogi tou mode apo ton 
+     * xristi mesw tou UI 
+     * @param mode 
+     */
+    public void setMode(String mode){
+        
+    }
+    
+    /**
+     * 
+     * @param notes 
+     */
+     public void setNotes(String notes){
+        
+    }
+     public String getNotes(){
+        return null;
+    }
+     public void setnameOfComposition(String nameOfComposition){
+        
+    }
+      public String getnameOfComposition(){
+        return this.nameOfComposition;
+    }
+    
+      public void setComposer(String composer){
+          
+      }
+       public String getComposer(){
+          return this.composer;
+      }
+    /**
+     * 2 methodi abstract pou prepei na ilopoiithoun 
+     * apo tis 3 upoklaseis tou Composition 
+     * Free Atonal Algorithmic
+     */
+    abstract void playMusic();
+
+    abstract void stopMusic();
+}
